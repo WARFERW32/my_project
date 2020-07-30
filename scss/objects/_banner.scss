@@ -1,0 +1,66 @@
+.banner{
+  position: relative;
+
+
+  .banner-box{
+
+
+
+    .banner__img{
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: cover;
+      right: 72.3%;
+
+
+      .image{
+        position: absolute;
+        width: 1100px;
+        height: 575px;
+
+
+      }
+    }
+
+    .banner-info{
+      position: absolute;
+      left: 51%;
+      top: 10%;
+      width: 400px;
+      height: 300px;
+
+
+
+      .banner__title{
+        color: #1393e0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        font-size: 50px;
+        font-weight: 700;
+
+      }
+      .banner__text{
+
+        color: #1393e0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 170px;
+        font-size: 30px;
+        font-weight: 400;
+      }
+    }
+
+    .banner-btn{
+      @include button;
+      position: absolute;
+      top: 65%;
+      left: 57.5%;
+
+
+
+    }
+  }
+}

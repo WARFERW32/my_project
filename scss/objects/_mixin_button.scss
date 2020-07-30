@@ -1,0 +1,23 @@
+@mixin button{
+  button{
+    background: #1393e0;
+    padding: 20px 70px 20px 70px;
+    border-radius: 7px 25px 7px 25px;
+    box-shadow: 0 0 10px white;
+    color: #ffffff;
+    border: none;
+    outline: none;
+
+
+  }
+  button:hover{
+    background: #1393e0;
+    animation: alternate;
+    box-shadow: 0 0 3px #1393e0;
+  }
+  button:active{
+    color: #fdfdfd;
+    background: #c41244;
+  }
+
+}

@@ -1,0 +1,241 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.logo {
+  width: 100%;
+  height: 80px;
+  background: #79b6c9;
+}
+.logo .logo_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo .logo_title .logo_img .logo_img-object {
+  padding-right: 80rem;
+}
+.logo .logo_title .logo_text {
+  font-weight: 700;
+  font-size: 36px;
+  position: absolute;
+  color: #1224c4;
+}
+
+.row .user-menu {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  background: #474646;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row .user-menu .menu-links .menu-elements {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+.row .user-menu .menu-links .menu-elements .menu-elem {
+  color: #ffffff;
+  padding: 26px 40px 24px;
+  margin-left: 10px;
+  background: none;
+  border: none;
+  transition: 0.3s;
+}
+.row .user-menu .menu-links .menu-elements .menu-elem,
+.row .user-menu .menu-links .menu-elements .menu-elem:active,
+.row .user-menu .menu-links .menu-elements .menu-elem:focus {
+  outline: none;
+}
+.row .user-menu .menu-links .menu-elements .menu-elem:hover {
+  border-bottom: 4px solid rgba(19, 147, 224, 0.8);
+  background: rgba(128, 128, 128, 0.5);
+  color: #1393e0;
+}
+.row .user-menu .menu-links .menu-icons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0.5rem;
+}
+.row .user-menu .menu-links .menu-icons .menu-icons__user .fa-user {
+  position: absolute;
+  left: 35rem;
+  padding: 5px;
+  bottom: -20px;
+}
+.row .user-menu .menu-links .menu-icons .menu-icons__user .fa-user:hover {
+  color: #1393e0;
+  width: 30px;
+  border-bottom: 4px solid rgba(19, 147, 224, 0.8);
+  padding-bottom: 24px;
+  bottom: -43px;
+}
+.row .user-menu .menu-links .menu-icons .menu-icons__search .fa-search {
+  position: absolute;
+  left: 40rem;
+  padding: 5px;
+  bottom: -20px;
+}
+.row .user-menu .menu-links .menu-icons .menu-icons__search .fa-search:hover {
+  color: #1393e0;
+  width: 30px;
+  border-bottom: 4px solid rgba(19, 147, 224, 0.8);
+  padding-bottom: 24px;
+  bottom: -43px;
+}
+.row .user-menu .menu-links .menu-icons .menu-icons__mobile .fa-mobile {
+  position: absolute;
+  left: 45rem;
+  bottom: -15px;
+  padding-left: 8px;
+}
+.row .user-menu .menu-links .menu-icons .menu-icons__mobile .fa-mobile:hover {
+  color: #1393e0;
+  width: 30px;
+  border-bottom: 4px solid rgba(19, 147, 224, 0.8);
+  padding-bottom: 24px;
+  bottom: -43px;
+}
+
+/* <div class="menu-elements">
+                  <button class="menu-elem">Home</button>
+                  <button class="menu-elem">Katalog</button>
+                  <button class="menu-elem">Pomoc</button>
+                  <button class="menu-elem">Kontakt</button>
+                </div>
+
+ */
+.banner {
+  position: relative;
+}
+.banner .banner-box .banner__img {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  right: 72.3%;
+}
+.banner .banner-box .banner__img .image {
+  position: absolute;
+  width: 1100px;
+  height: 575px;
+}
+.banner .banner-box .banner-info {
+  position: absolute;
+  left: 51%;
+  top: 10%;
+  width: 400px;
+  height: 300px;
+}
+.banner .banner-box .banner-info .banner__title {
+  color: #1393e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  font-size: 50px;
+  font-weight: 700;
+}
+.banner .banner-box .banner-info .banner__text {
+  color: #1393e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 170px;
+  font-size: 30px;
+  font-weight: 400;
+}
+.banner .banner-box .banner-btn {
+  position: absolute;
+  top: 65%;
+  left: 57.5%;
+}
+.banner .banner-box .banner-btn button {
+  background: #1393e0;
+  padding: 20px 70px 20px 70px;
+  border-radius: 7px 25px 7px 25px;
+  box-shadow: 0 0 10px white;
+  color: #ffffff;
+  border: none;
+  outline: none;
+}
+.banner .banner-box .banner-btn button:hover {
+  background: #1393e0;
+  -webkit-animation: alternate;
+          animation: alternate;
+  box-shadow: 0 0 3px #1393e0;
+}
+.banner .banner-box .banner-btn button:active {
+  color: #fdfdfd;
+  background: #c41244;
+}
+/*# sourceMappingURL=main.css.map */
